@@ -1,0 +1,58 @@
+---
+import CorreoIcon from "./Icons/CorreoIcon.astro"
+import CvIcon from "./Icons/CvIcon.astro"
+import GitHubIcon from "./Icons/GitHubIcon.astro"
+import LinkedInIcon from "./Icons/LinkedInIcon.astro"
+import Social from "./Social.astro"
+const personalImageAlt = "Jimena Cambronero Lambert"
+
+---
+
+<div class="max-w mx-auto">
+  <div class="flex flex-col-reverse sm:flex-row gap-4 mb-4 items-center sm:items-start">
+    
+    <!-- Título y Descripción -->
+    <div class="sm:w-2/3">
+      <h1 class="text-4xl font-bold tracking-tight text-gray-700 sm:text-5xl dark:text-white">
+        Hola, soy Jimena 👩‍💻
+      </h1>
+      <p class="mt-4 text-xl text-gray-800 dark:text-gray-300">
+        <strong class="text-yellow-500 font-semibold dark:text-yellow-200">Analista de datos</strong> |
+        Data Analyst | Data Viz |
+        <strong class="text-yellow-500 font-semibold dark:text-yellow-200">Power BI</strong> |
+        SQL | Business Analyst | Business Intelligence | Python | Pandas | NumPy |
+        <strong class="text-yellow-500 font-semibold dark:text-yellow-200">Desarrolladora web Front-end</strong> |
+        Viviendo en Madrid, España 🇪🇸
+      </p>
+
+      <!-- Enlaces -->
+      <nav class="flex flex-wrap gap-4 mt-6">
+        <Social href="https://www.linkedin.com/in/jimenacambronero/">
+          <LinkedInIcon class="size-4" />
+          LinkedIn
+        </Social>
+        <Social href="https://github.com/JimenaCambronero">
+          <GitHubIcon class="size-4" />
+          GitHub
+        </Social>
+        <Social href="mailto:jimenacambronero@gmail.com">
+          <CorreoIcon class="size-4" />
+          Contáctame
+        </Social>
+        <Social href="https://drive.google.com/file/d/1svzantk2WIOWQAk6xqmYWhUVfK-mjDbg/view?usp=sharing">
+          <CvIcon class="size-4" />
+          Ver CV
+        </Social>
+      </nav>
+    </div>
+    
+    <!-- Imagen -->
+    <div class="sm:w-1/3 sm:justify-end">
+      <img
+        class="rounded-full shadow-lg w-24 h-24 sm:w-48 sm:h-48"
+        src="public/foto/me.png"
+        alt={personalImageAlt}
+      />
+    </div>
+  </div>
+</div>

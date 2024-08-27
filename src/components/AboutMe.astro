@@ -1,0 +1,47 @@
+---
+import Badge from "./Badge.astro"
+ const personalImageAlt = "Jimena"
+---
+
+<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+  >
+    <p>
+      👩‍💻Analista de datos con una sólida formación en derecho y una transición al desarrollo web y al análisis de datos. Hace cinco años, decidí dar un giro a mi carrera y me sumergí en el apasionante mundo de la tecnología y los datos.
+    </p>
+    <p>
+      👩‍💻 Mi trayectoria profesional comenzó en el ámbito legal, donde desarrollé un enfoque meticuloso y una capacidad para tomar decisiones informadas. Estas habilidades las he transferido con éxito al análisis de datos, utilizando técnicas de ETL, visualización de datos y creación de dashboards.
+    </p>
+    <p>
+      🌍 Me formé en análisis de datos, adquiriendo habilidades en SQL, Python, Power BI, y Google Sheets, lo que me permite abordar problemas complejos y ofrecer soluciones basadas en datos.
+    </p>
+    <p>
+      🐦 ¿Qué me destaca? Mi capacidad para analizar datos de manera efectiva, usar herramientas como SQL, Python (Pandas, NumPy, Matplotlib, Seaborn) y Power BI, y tomar decisiones basadas en evidencia. Además, tengo una gran pasión por los datos y una disposición para aprender y adaptarme rápidamente.
+    </p>
+    <p>
+      🔍 Si estás buscando a alguien con pasión por los datos, habilidades analíticas sólidas en SQL, Python, y Power BI, y una actitud proactiva para aprender y adaptarse, me encantaría conectar contigo. Vamos a conversar y descubrir cómo puedo contribuir a tu equipo y a tus proyectos..
+    </p>
+  </div>
+
+</article>
+<div class="flex flex-col items-center p-4 space-y-4 ">
+
+  <!-- Contenedor para centrar el contenido -->
+  <div class="flex items-center justify-center">
+    <img
+      width="200"
+      height="200"
+      src="/foto/me.png"
+      alt={personalImageAlt}
+      class="w-48 h-48 object-cover rounded-full transition-transform duration-300 transform hover:scale-105"
+    />
+  </div>
+
+  <a
+    href="https://www.linkedin.com/in/jimenacambronero/"
+    target="_blank"
+    rel="noopener"
+  >
+    <Badge> Disponible para Trabajar </Badge>
+</div>

@@ -1,0 +1,63 @@
+---
+import AboutMe from "../components/AboutMe.astro";
+import Education from "../components/Education.astro";
+import Experience from "../components/Experience.astro";
+import Hero from "../components/Hero.astro";
+import Briefcase from "../components/Icons/Briefcase.astro";
+import Code from "../components/Icons/Code.astro";
+import ProfileCheck from "../components/Icons/ProfileCheck.astro";
+import Projects from "../components/Projects.astro";
+import BookIcon from "../components/Icons/BookIcon.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout 
+	title="Jimena Cambronero Porfolio. Analista de Datos. Data Viz. Desarrolladora Web"
+	description = "Si buscas una analista de datos con muchas ganas de aprender y crecer contactame"
+>
+<main class="px-4">
+    <SectionContainer class="py-16 md:py-24">
+      <Hero>
+      </slot>
+    </Hero>
+    </SectionContainer>
+    <div class="space-y-24">
+    <SectionContainer id="experiencia">
+      <h2
+        class="flex items-center text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Briefcase class="size-8" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Code class="size-7" />
+        Proyectos Análisis de datos
+      </h2>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+      >
+        <ProfileCheck class="size-8" />
+        Sobre mí
+      </h2>
+      <AboutMe />
+    </SectionContainer>  
+    <SectionContainer id="formacion">
+      <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+      >
+        <BookIcon class="size-8" />
+        Formaciones
+      </h2>
+      <Education />
+    </SectionContainer>  
+  </div>
+  </main>
+</Layout>

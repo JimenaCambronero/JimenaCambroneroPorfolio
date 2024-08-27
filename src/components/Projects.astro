@@ -1,0 +1,127 @@
+---
+import GitHubIcon from "./Icons/GitHubIcon.astro"
+import SqlIcon from "./Icons/SqlIcon.astro"
+import Link from "./Icons/Link.astro"
+import LinkButton from "./LinkButton.astro"
+import PythonIcon from "./Icons/PythonIcon.astro"
+import PowerBiIcon from "./Icons/PowerBiIcon.astro"
+
+const TAGS = {
+  PYTHON: {
+    name: "Python",
+    class: "bg-black text-white",
+    icon: PythonIcon,
+  },
+  SQL: {
+    name: "Sql",
+    class: "bg-black  text-white",
+    icon: SqlIcon,
+  },
+  POWERBI: {
+    name: "Power Bi",
+    class: "bg-black  text-white",
+    icon: PowerBiIcon,
+  }
+
+}
+
+const PROJECTS = [
+{
+    title: "ServiTech. Power Bi 👩‍🏫",
+    description: "Análisis de datos mediante Power BI, utilizando el registro y gestión de tickets de servicio al cliente de una empresa ficticia. Conjunto de datos en archivo Excel, que registra las solicitudes de servicio recibidas, incluye información como el estado del ticket, la prioridad, el gestor asignado, el cliente solicitante, fechas de apertura y cierre de las incidencias, entre otros. 𝗗𝗼𝗺𝗶𝗻𝗶𝗼 𝗲𝗻 𝗠𝗼𝗱𝗲𝗹𝗮𝗱𝗼 𝗱𝗲 𝗗𝗮𝘁𝗼𝘀: Me sumergí en la estructura y relaciones de los modelos de datos de servicio al cliente en Power BI.𝗙𝘂𝗻𝗰𝗶𝗼𝗻𝗲𝘀 𝗗𝗔𝗫 : Utilicé funciones como 𝗖𝗔𝗟𝗖𝗨𝗟𝗔𝗧𝗘, 𝗥𝗘𝗠𝗢𝗩𝗘𝗙𝗜𝗟𝗧𝗘𝗥, 𝗨𝗦𝗘𝗥𝗘𝗟𝗔𝗧𝗜𝗢𝗡𝗦𝗛𝗜𝗣  y 𝗦𝗔𝗠𝗘𝗣𝗘𝗥𝗜𝗢𝗗𝗟𝗔𝗦𝗧𝗬𝗘𝗔𝗥, fui capaz de realizar análisis temporales y de relaciones de manera precisa. La creación de medidas personalizadas facilitó la interpretación de la gestión de tickets y la identificación de tendencias clave. He creado medidas para aplicar diversos formatos de una manera más sencilla y reutilizables.⁣ Diseñé y desarrollé un dashboard indispensable para la toma de decisiones empresariales y la optimización de procesos fundamental para identificar áreas de mejora en la gestión de tickets.⁣",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiNTJlZmRiZTgtYzJhMy00YmEwLWFkY2EtMTRmM2VlODBmYzE1IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9",
+    image: "/projects/servitech.webp",
+    tags: [TAGS.POWERBI],
+  },
+  {
+    title: "Cuenta de pérdidas y ganancias (P&L). Power Bi📊",
+    description: "La Cuenta de Pérdidas y Ganancias (P&L) constituye un documento contable esencial para las empresas, detallando los ingresos y gastos a lo largo de un período, generalmente un año. Este informe reviste una importancia significativa debido a varios motivos:La P&L revela si la empresa está generando beneficios o enfrentando pérdidas, aspecto crucial para inversores y gestores. 𝗔𝗽𝗼𝘆𝗼 𝗲𝗻 𝗹𝗮 𝗧𝗼𝗺𝗮 𝗱𝗲 𝗗𝗲𝗰𝗶𝘀𝗶𝗼𝗻𝗲𝘀: Proporciona una base sólida para decisiones estratégicas informadas, como ajustes en precios o costos. 𝗙𝗮𝗰𝗶𝗹𝗶𝘁𝗮 𝗲𝗹 𝗔𝗻𝗮́𝗹𝗶𝘀𝗶𝘀 𝘆 𝗹𝗮 𝗣𝗹𝗮𝗻𝗶𝗳𝗶𝗰𝗮𝗰𝗶𝗼́𝗻: Permite examinar tendencias y desempeño, aspecto esencial para la planificación a largo plazo. 𝗖𝘂𝗺𝗽𝗹𝗶𝗺𝗶𝗲𝗻𝘁𝗼 𝗟𝗲𝗴𝗮𝗹: Frecuentemente es un requisito regulatorio para asegurar la transparencia financiera y cumplir con las normativas pertinentes𝗙𝗶𝗻𝗮𝗹𝗶𝗱𝗮𝗱 𝗱𝗲𝗹 𝗣𝗿𝗼𝘆𝗲𝗰𝘁𝗼.Creación de medidas DAX que obedezcan a la lógica de negocio propia de una cuenta de pérdidas y ganancias.Representación visual de una PyG en un informe financiero con visuales nativos de Power BI.",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiMGRkNjViNmItMGU1MC00YWI0LTgyNzktYWIyNDhiNzJkODg2IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9&pageName=ReportSection076521d9f4e2aa633518",
+    image: "/projects/P&L.webp",
+    tags: [TAGS.POWERBI],
+  },
+  {
+    title: "Evaluación Automotriz. Power Bi 🚘",
+    description: "El objetivo principal fue identificar qué factores son los más importantes cuando se evalúa un vehículo para su compra.⁣⁣Al entender estos patrones, los fabricantes podrían mejorar el diseño de futuros vehículos, los vendedores ajustarían sus estrategias de venta y marketing, y los clientes tomarían decisiones de compra más informadas. Esto no solo mejoraría la satisfacción del cliente, sino que también haría que el mercado automotriz sea más eficiente, aumentando las ventas y consiguiendo la fidelización hacia la marca.⁣ 𝗧𝗿𝗮𝗻𝘀𝗳𝗼𝗿𝗺𝗮𝗰𝗶𝗼́𝗻 𝗱𝗲 𝗗𝗮𝘁𝗼𝘀: Se importa el dataset en Power BI y configuran los tipos de datos, se crea una columna condicional para categorizar los precios de los vehículos.⁣ 𝗘𝘀𝘁𝗮𝗻𝗱𝗮𝗿𝗶𝘇𝗮𝗰𝗶𝗼́𝗻: Ajuste formatos de texto, se ocultaron los datos innecesarios y se tradujeron los valores claves para garantizar la claridad en el análisis.⁣ 𝗠𝗼𝗱𝗲𝗹𝗮𝗱𝗼 𝗱𝗲 𝗗𝗮𝘁𝗼𝘀: Se implemento una tabla de medidas personalizadas utilizando 𝗗𝗔𝗫, y se creo una 𝘁𝗮𝗯𝗹𝗮 𝗰𝗮𝗹𝗲𝗻𝗱𝗮𝗿𝗶𝗼 para el análisis temporal.⁣𝗩𝗶𝘀𝘂𝗮𝗹𝗶𝘇𝗮𝗰𝗶𝗼́𝗻: Dpara ventas por número de puertas, tamaño del maletero y rango de precios. Además, se optimizaron estas visualizaciones en 𝗺𝗼𝗱𝗼 𝗼𝘀𝗰𝘂𝗿𝗼, 𝗰𝗹𝗮𝗿𝗼, 𝘆 𝘃𝗲𝗿𝘀𝗶𝗼́𝗻 𝗺𝗼́𝘃𝗶𝗹 𝗽𝗮𝗿𝗮 𝗺𝗲𝗷𝗼𝗿𝗮𝗿 𝗹𝗮 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗶𝗮 𝗱𝗲𝗹 𝘂𝘀𝘂𝗮𝗿𝗶𝗼.⁣𝗔𝗻𝗮́𝗹𝗶𝘀𝗶𝘀 𝘆 𝗖𝗼𝗻𝗰𝗹𝘂𝘀𝗶𝗼𝗻𝗲𝘀: Experimentamos con diferentes configuraciones de visualización para extraer conclusiones valiosas y comprender mejor los datos.⁣",
+    link: "https://app.powerbi.com/reportEmbed?reportId=7cf54667-0e5e-4d0d-8200-5581ae568d33&autoAuth=true&ctid=de34eb7b-1caa-494a-a78b-d09726168208",
+    image: "/projects/auto.webp",
+    tags: [TAGS.POWERBI],
+  },
+
+  {
+    title: "Análisis exploratorio. Dataset Titanic 🚢",
+    description: "El conjunto de datos del Titanic contiene información detallada sobre los pasajeros del trágico viaje del RMS Titanic en 1912. Este análisis nos permitirá explorar diversos aspectos relacionados con la supervivencia de los pasajeros y cómo diferentes variables influyeron en las tasas de supervivencia. Se utilizan las librerías Pandas, NumPy, Matplotlib y Seaborn para el análisis y la visualización de los datos. Se realizan gráficos para mejorar la visualización del análisis.",
+    link: "https://github.com/JimenaCambronero/Titanic_AnalisisPython/blob/main/AnálisisTitanic.ipynb",
+    github: "https://github.com/JimenaCambronero/Titanic_AnalisisPython/tree/main",
+    image: "/projects/titanic.webp",
+    tags: [TAGS.PYTHON],
+  },
+  {
+    title: "Análisis Exploratorio. Evaluación Automotriz 🚘",
+    description: "Análisis detallado de un dataset proporcionado por una empresa del sector automotriz. El problema central que se abordará es la identificación de aquellos factores clave que influyen en la evaluación de los vehículos para su compra. Mediante la utilización de Python se realizará un análisis exploratorio, limpieza y transformación de datos según lo requerido. Se utilizarán librerías para una mejor visualización de los datos.",
+    link: "https://github.com/JimenaCambronero/Titanic_AnalisisPython/blob/main/AnálisisTitanic.ipynb",
+    github: "https://github.com/JimenaCambronero/AnalisisAutomotriz_Python/blob/main/Proyecto%20Final%20-%20Evaluacion%20Automotriz.ipynb",
+    image: "/projects/proyectoautomotriz.webp",
+    tags: [TAGS.PYTHON],
+  },
+  {
+    title: "Análisis Conjunto de Datos de Propinas (Tips)👩‍🍳 ",
+    description: "Análisis paso a paso utilizando Seaborn sobre un conjunto de datos de propinas (tips). Se cubren conceptos básicos como visualización de datos univariados y bivariados, manipulación de datos, y técnicas de exploración de patrones. Este conjunto de datos es ampliamente utilizado en la comunidad de análisis de datos y contiene información sobre la cantidad de propina dejada por los clientes en un restaurante, junto con varias características asociadas como el total de la factura, el día de la semana, y la cantidad de comensales ",
+    link: "https://github.com/JimenaCambronero/Analisis_datos_Python/blob/main/Practica.ipynb",
+    github: "https://github.com/JimenaCambronero/Analisis_datos_Python",
+    image: "/projects/propinas.webp",
+    tags: [TAGS.PYTHON],
+  },
+  {
+    title: "Limpieza de datos. Learndata 🧹 ",
+    description: "El proyecto de limpieza de datos con SQL tiene como objetivo principal mejorar la calidad y confiabilidad de los conjuntos de datos utilizados en las organizaciones. Tareas realizadas: Creación de base de datos en MYSQL, Creación de tablas en MYSQL, Creación de Primary Keys,Insertar datos en un tabla en MYSQL, Seleccionar datos de un tabla en MYSQL, Seleccionar datos de un tabla en MYSQL, Transformación de datos en MYSQL, Funciones varias: CAST, REPLACE, DATE,RIGHT,CASE ,Parseo de JSON con MYSQL  ",
+    link: "https://github.com/JimenaCambronero/LearnData/blob/main/learndata.sql",
+    github: "https://github.com/JimenaCambronero/LearnData",
+    image: "/projects/learndata.webp",
+    tags: [TAGS.SQL],
+  },
+
+  {
+    title: "Análisis Financiero & Tráfico Web - Ecommerce 📊⁣ ",
+    description: "En este proyecto se trabajó con una base de datos de retail online que se dedica a la venta de productos a través de su web. Se analizó la situación actual de la empresa para entender las ventas e impacto de los productos.  Aprender a leer modelos relacionales y tablas en una empresa. Se exploraron los datos para entenderlos mejora antes de trabajar con ellos. Se tradujeron preguntas de negocio a lenguaje de SQL. Se escriberon queries complejas para responder a las necesidades de negocio ",
+    link: "https://github.com/JimenaCambronero/LearnData/blob/main/learndata.sql",
+    github: "https://github.com/JimenaCambronero/LearnData",
+    image: "/projects/analisisfinanciero.webp",
+    tags: [TAGS.SQL],
+  },
+]
+---
+
+<div class="flex flex-col gap-y-16">
+  {PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    <article class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 flex flex-col">
+      <h3 class="text-2xl font-bold text-yellow-500 mb-2">{title}</h3>
+      <ul class="flex flex-wrap mb-2 gap-x-2">
+        {tags.map((tag) => (
+          <li ={tag.name}>
+            <span class={`flex gap-x-2 rounded-full ${tag.class} py-2 px-4`}>
+              <tag.icon class="size-4" />
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <div class="mt-2 text-gray-500 dark:text-gray-300 pb-6">{description}</div>
+      <img class="rounded shadow-2xl shadow-white/10 object-cover" src={image} alt="Captura de pantalla del proyecto" />
+      <footer class="flex items-center justify-start mt-4 gap-x-4">
+        {github && (
+          <LinkButton href={github} class="flex items-center gap-x-2">
+            <GitHubIcon class="size-6" />
+            Ver Código
+          </LinkButton>
+        )}
+        {link && (
+          <LinkButton href={link} class="flex items-center gap-x-2">
+            <Link class="size-4" />
+            Ver Proyecto
+          </LinkButton>
+        )}
+      </footer>
+    </article>
+  ))}
+</div>

@@ -1,0 +1,44 @@
+---
+import EducationItem from "./EducationItem.astro"
+const EDUCATION = [
+  {
+    date: "Julio 2024 - Noviembre 2024",
+    title: "Curso para Certificación PL-300",
+    company: "NamasData",
+    description:
+      "Curso de Power BI PL-300 orientado a la obtención de la certificación oficial de Microsoft."
+  },
+  {
+    date: "Octubre 2023 - Agosto 2024",
+    title: "Analista de datos",
+    company: "Unicorn Academy",
+    description:
+      "Programa práctico de capacitación en análisis de datos y Visualización de datos. Google Sheets.Bases de datos con SQL. Business Intelligence con Power BI. Análisis de datos y estadística con Python. Nube y ETL."
+  },
+  {
+    date: "Septiembre 2021 - Julio 2023",
+    title: "Front End Developer",
+    company: "CoderHouse",
+    description:
+      "Formación integral en desarrollo web enfocada en la creación de interfaces de usuario interactivas y responsivas. Utilización de HTML, CSS y JavaScript, además de frameworks modernos como React para construir aplicaciones web. Fortalecimiento de habilidades en diseño, optimización de rendimiento, manejo de APIs y control de versiones con Git"
+
+  },
+  {
+    date: "Marzo 2000 - Junio 2008",
+    title: "Abogado",
+    company: "Facultad de Ciencias Juridicas y Sociales de la Universidad Nacional de La Plata",
+    description:
+      "Formación Universitaria en Ciencias Juridicas"
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EDUCATION.map((education) => (
+      <li class="">
+        <EducationItem {...education} />
+      </li>
+    ))
+  }
+</ol>
