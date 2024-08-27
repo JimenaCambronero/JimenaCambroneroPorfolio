@@ -5,6 +5,7 @@ import Link from "./Icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import PythonIcon from "./Icons/PythonIcon.astro"
 import PowerBiIcon from "./Icons/PowerBiIcon.astro"
+import WebIcon from "./Icons/WebIcon.astro"
 
 const TAGS = {
   PYTHON: {
@@ -21,8 +22,13 @@ const TAGS = {
     name: "Power Bi",
     class: "bg-black  text-white",
     icon: PowerBiIcon,
+  },
+  WEB: {
+    name: "Página Web",
+    class: "bg-black  text-white",
+    icon: WebIcon,
   }
-
+  
 }
 
 const PROJECTS = [
@@ -84,12 +90,41 @@ const PROJECTS = [
   {
     title: "Análisis Financiero & Tráfico Web - Ecommerce 📊⁣ ",
     description: "En este proyecto se trabajó con una base de datos de retail online que se dedica a la venta de productos a través de su web. Se analizó la situación actual de la empresa para entender las ventas e impacto de los productos.  Aprender a leer modelos relacionales y tablas en una empresa. Se exploraron los datos para entenderlos mejora antes de trabajar con ellos. Se tradujeron preguntas de negocio a lenguaje de SQL. Se escriberon queries complejas para responder a las necesidades de negocio ",
-    link: "https://github.com/JimenaCambronero/LearnData/blob/main/learndata.sql",
-    github: "https://github.com/JimenaCambronero/LearnData",
+    link: "https://github.com/JimenaCambronero/TiendaUnicornioFeliz/blob/main/preguntas.sql",
+    github: "https://github.com/JimenaCambronero/TiendaUnicornioFeliz",
     image: "/projects/analisisfinanciero.webp",
     tags: [TAGS.SQL],
   },
+
+  {
+    title: "Página Web - Cristian del Giorgio. Tecladista 🎹 Compositor 📊⁣ ",
+    description: "Página para Cristian del Giorgio. Tecladista. Compositor. Arreglador y creador del Método de enseñanza The Secret Key para tecladistas. Este proyecto fue construido con HTML, SASS y se incluyeron algunos elementos de Bootstrap & AOS elements. ",
+    link: "https://cristiandel-giorgio.vercel.app",
+    github: "https://github.com/JimenaCambronero/CristiandelGiorgio",
+    image: "/projects/cdg.webp",
+    tags: [TAGS.WEB],
+  },
+
+  {
+    title: "E-Commerse Simon's Cat 🐱⁣ ",
+    description: "Proyecto basado en un e-commerce de Simon´s Cat, un gato doméstico siempre hambriento usa diversas tácticas para lograr que su dueño lo alimente. el mismo fue Desarrollado aplicando React.js, React Router, Firebase y Tailwind. ",
+    link: "https://proyecto-tienda-react.vercel.app",
+    github: "https://github.com/JimenaCambronero/ProyectoTiendaReact",
+    image: "/projects/simon.webp",
+    tags: [TAGS.WEB],
+  },
+
+  {
+    title: "Pagina Web - Cuidamos tu Mascota 🐱⁣ ",
+    description: "El sitio web Cuidamos Tu Mascota es un proyecto diseñado para ofrecer servicios relacionados con el cuidado de mascotas, incluyendo información sobre cómo cuidar a las mascotas y posibles servicios de contacto para los dueños de animales. El proyecto se enfoca en proporcionar una interfaz amigable y útil para quienes buscan mejorar el bienestar de sus mascotas, presentando contenidos educativos y funcionales que facilitan la vida diaria de los dueños. El sitio está desarrollado con tecnologías modernas como HTML, CSS, JavaScript, y Bootstrap, lo que le permite ser accesible y funcional en diferentes dispositivos​.",
+    link: "https://cuidamos-tu-mascota.vercel.app",
+    github: "https://github.com/JimenaCambronero/CuidamosTuMascota",
+    image: "/projects/mascota.webp",
+    tags: [TAGS.WEB],
+  },
 ]
+
+
 ---
 
 <div class="flex flex-col gap-y-16">
