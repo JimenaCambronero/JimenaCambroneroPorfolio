@@ -1,7 +1,8 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
-{
+
+const EXPERIENCES = [
+  {
     date: "Noviembre 2024 - Actualidad",
     title: "Consultora de Data Analytics & Business Intelligence",
     company: "Raona",
@@ -15,15 +16,8 @@ const EXPERIENCIE = [
     description:
       "Me enfoqué en potenciar el canal Cristian del Giorgio Music a través de estrategias de SEO avanzadas y análisis de datos. Gestioné el rendimiento de los videos utilizando YouTube Analytics, optimicé títulos y descripciones con palabras clave de alto impacto, y planifiqué contenido alineado con las preferencias de la audiencia para maximizar la retención. Implementé pruebas A/B en títulos y miniaturas, logrando un aumento del 21% en visualizaciones y un crecimiento constante de la base de suscriptores. Además, organicé listas de reproducción y rediseñé la estructura del canal, mejorando la experiencia del usuario y aumentando el tiempo de visualización al facilitar el acceso a contenido relevante y atractivo.",
   },
-  
   {
-    date: "Junio 2024 - Actualidad",
-    title: "Especialista en Optimización de Canales de YouTube y SEO",
-    company: "Cristian del Giorgio Music",
-    description:
-      "Me enfoqué en potenciar el canal Cristian del Giorgio Music a través de estrategias de SEO avanzadas y análisis de datos. Gestioné el rendimiento de los videos utilizando YouTube Analytics, optimicé títulos y descripciones con palabras clave de alto impacto, y planifiqué contenido alineado con las preferencias de la audiencia para maximizar la retención. Implementé pruebas A/B en títulos y miniaturas, logrando un aumento del 21% en visualizaciones y un crecimiento constante de la base de suscriptores. Además, organicé listas de reproducción y rediseñé la estructura del canal, mejorando la experiencia del usuario y aumentando el tiempo de visualización al facilitar el acceso a contenido relevante y atractivo.",
-  },
-  {date: "Junio 2010 - junio 2023",
+    date: "Junio 2010 - Junio 2023",
     title: "Secretaria Privada",
     company: "Poder Judicial de la Provincia de Buenos Aires",
     description:
@@ -31,30 +25,27 @@ const EXPERIENCIE = [
   },
   {
     date: "Abril 2022 - Mayo 2022",
-    title: "Desarrollador de front-end",
+    title: "Desarrollador front-end",
     company: "Bienestar Salud",
     description:
       "Este proyecto implicó la creación de una página web para satisfacer las necesidades y objetivos específicos del cliente. Colaboré con el cliente para comprender sus requisitos y objetivos, asegurándome de que la página web cumpliera con sus expectativas y necesidades. Utilicé HTML y CSS para desarrollar la estructura y el diseño de la página web, asegurándome de que fuera visualmente atractiva y fácil de navegar. Incorporé elementos de Bootstrap y AOS elements para mejorar la usabilidad y la experiencia del usuario en la página web. Implementé prácticas de diseño responsivo para garantizar que la página fuera compatible con dispositivos móviles y de escritorio. Realicé pruebas exhaustivas para identificar y corregir errores de funcionamiento y de diseño, garantizando la calidad y la integridad de la página web. Proporcioné soporte y mantenimiento continuo para asegurar el buen funcionamiento de la página web después de su implementación.Trabajé de manera eficiente para cumplir con los plazos establecidos y entregar el proyecto dentro del tiempo acordado.",
-    link: "https://bienestar-salud.vercel.app"
-
+    link: "https://bienestar-salud.vercel.app",
   },
   {
     date: "Agosto 2008 - Junio 2010",
     title: "Abogado",
     company: "Ejercicio de la Profesión Libre",
     description:
-      "Desarrollé habilidades en comunicación para interactuar con el cliente, resolución de problemas y gestión de clientes. Establecí relaciones sólidas con clientes al brindar asesoramiento legal personalizado y orientación en una variedad de asuntos legales."
-
+      "Desarrollé habilidades en comunicación para interactuar con el cliente, resolución de problemas y gestión de clientes. Establecí relaciones sólidas con clientes al brindar asesoramiento legal personalizado y orientación en una variedad de asuntos legales.",
   },
-
 ]
 ---
 
 <ol class="relative mt-16">
   {
-    EXPERIENCIE.map((experiencie) => (
-      <li class="">
-        <ExperienceItem {...experiencie} />
+    EXPERIENCES.map((experience) => (
+      <li>
+        <ExperienceItem {...experience} />
       </li>
     ))
   }

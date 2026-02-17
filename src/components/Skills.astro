@@ -1,0 +1,48 @@
+---
+const SKILLS = {
+  "Business Intelligence & Analytics": [
+    "Power BI",
+    "Microsoft Fabric",
+    "DAX",
+    "Power Query",
+    "Tabular Editor",
+    "DAX Studio",
+  ],
+  "Datos & Bases de Datos": [
+    "SQL",
+    "Data Modeling",
+    "Semantic Models",
+    "ETL Processes",
+  ],
+  "Programación & Análisis": [
+    "Python",
+    "Google Sheets",
+    "YouTube Analytics",
+  ],
+  "Desarrollo Web": [
+    "HTML",
+    "CSS",
+    "React.js",
+  ],
+  "Herramientas": [
+    "GitHub",
+  ],
+}
+---
+
+<div class="grid gap-8">
+  {
+    Object.entries(SKILLS).map(([category, skills]) => (
+      <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6">
+        <h3 class="text-xl font-bold text-yellow-500 mb-4">{category}</h3>
+        <div class="flex flex-wrap gap-3">
+          {skills.map((skill) => (
+            <span class="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-full text-sm font-medium hover:bg-yellow-100 dark:hover:bg-yellow-900 hover:text-yellow-700 dark:hover:text-yellow-400 transition-colors duration-200">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</div>
