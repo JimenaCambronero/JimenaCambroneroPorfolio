@@ -107,16 +107,18 @@ Acá va lo bueno: dónde aprender sin perderte en el mar de contenido que hay da
 ### 📚 **Microsoft Learn**
 La documentación oficial de Microsoft, está MUY bien hecha. Tiene rutas de aprendizaje estructuradas, ejercicios prácticos y labs gratuitos. Es el lugar donde arranqué y sigo volviendo cuando necesito entender algo en profundidad.
 
+<a href="https://learn.microsoft.com/es-es/training/browse/?products=fabric" style="color: #eab308; font-weight: bold;" target="_blank">→ Mirá las rutas de aprendizaje en Microsoft Learn</a>
+
 
 ### 🎥 **ADN Fabric en YouTube**
 Este canal es ORO. Contenido en español, bien explicado, con casos prácticos. Si sos de aprender viendo cómo otros lo hacen, este es tu lugar. Cada video que veo me enseña algo nuevo.
 
-[Suscribite al canal ADN Fabric](https://www.youtube.com/@ADNFabric)
+<a href="https://www.youtube.com/@ADNFabric" style="color: #eab308; font-weight: bold;" target="_blank">→ Suscribite al canal ADN Fabric</a>
 
 ### 📖 **"Introducción a Microsoft Fabric" de Diana y Nelson**
 Este libro es una joya. Está pensado para quienes recién arrancan pero también tiene contenido avanzado. La explicación de los conceptos es super clara y los ejemplos son súper prácticos. Yo lo tengo siempre a mano como referencia.
 
-[Compralo en Amazon](https://amzn.eu/d/0hPOa6W4)
+<a href="https://amzn.eu/d/0hPOa6W4" style="color: #eab308; font-weight: bold;" target="_blank">→ Compralo en Amazon</a>
 
 **Pro tip**: Combiná estos tres recursos. Lee la teoría en el libro, seguí los labs de Microsoft Learn, y después mirá los videos de ADN Fabric para ver cómo otros lo aplican. Esa combinación a mí me funcionó de maravilla.
 
@@ -127,8 +129,11 @@ Microsoft Fabric no es solo otra herramienta más en la lista interminable de te
 Si trabajás con datos, dominar Fabric significa:
 
 ✅ Más oportunidades laborales (las ofertas están lloviendo)
+
 ✅ Poder construir soluciones completas vos mismo/a (sin depender de 5 equipos diferentes)
+
 ✅ Estar en la vanguardia de la tecnología (y no correr atrás)
+
 ✅ Simplificar tu vida (menos herramientas = menos dolores de cabeza)
 
 ## Un mensaje personal para vos
