@@ -26,6 +26,10 @@ const formatDate = (date: Date) => {
 <Layout
   title={`${entry.data.title} | Jimena Cambronero`}
   description={entry.data.description}
+  type="article"
+  publishedDate={entry.data.pubDate}
+  articleAuthor={entry.data.author}
+  image={entry.data.image}
 >
   <main class="container mx-auto px-4 py-8 md:py-16 max-w-4xl">
     <!-- Breadcrumb -->
