@@ -26,23 +26,23 @@ const { description, title } = Astro.props
     <!-- SEO -->
     <meta name="author" content="Jimena Cambronero" />
     <meta name="keywords" content="Data Analytics, Power BI, SQL, Python, Business Intelligence, Microsoft Fabric, DAX, ETL, Desarrollo Web, React, Portfolio" />
-    <link rel="canonical" href="https://tudominio.com" />
+    <link rel="canonical" href={Astro.url.href} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tudominio.com" />
+    <meta property="og:url" content={Astro.url.href} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://tudominio.com/og-image.jpg" />
+    <meta property="og:image" content="https://jimenacambronero.netlify.app/foto/me.png" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:site_name" content="Jimena Cambronero - Portfolio" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://tudominio.com" />
+    <meta property="twitter:url" content={Astro.url.href} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="https://tudominio.com/og-image.jpg" />
+    <meta property="twitter:image" content="https://jimenacambronero.netlify.app/foto/me.png" />
 
     <ViewTransitions />
   </head>
