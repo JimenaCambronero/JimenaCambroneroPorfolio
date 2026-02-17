@@ -1,0 +1,86 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat('es-ES', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }).format(date);
+};
+---
+
+<Layout
+  title="Blog | Jimena Cambronero - Data Analytics & BI"
+  description="Artículos sobre Data Analytics, Power BI, Microsoft Fabric, SQL y Python. Insights y mejores prácticas del mundo del Business Intelligence."
+>
+  <main class="container mx-auto px-4 py-16 max-w-4xl">
+    <div class="mb-12">
+      <h1 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">
+        Apuntes desde la trinchera de datos 📊
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+        Cada día trabajo con datos, dashboards y pipelines ETL que a veces funcionan a la primera (spoiler: casi nunca).
+        Aquí comparto lo que voy aprendiendo en el camino, con un enfoque especial en <span class="text-yellow-500 dark:text-yellow-400 font-semibold">Microsoft Fabric</span> —la plataforma que está revolucionando cómo trabajamos con datos en el ecosistema Microsoft.
+        Desde trucos con DAX y Dataflows Gen2 que me salvaron la vida, hasta reflexiones sobre las herramientas que están transformando el mundo del analytics.
+        Si algo me sirvió a mí, tal vez te sirva a ti.
+        <span class="text-yellow-500 dark:text-yellow-400 font-semibold">¡Bienvenido/a! 🧉</span>
+      </p>
+    </div>
+
+    <div class="space-y-8">
+      {sortedPosts.map((post) => (
+        <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <a href={`/blog/${post.slug}`} class="block p-6">
+            <div class="flex flex-col gap-3">
+              <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+                <time datetime={post.data.pubDate.toISOString()}>
+                  {formatDate(post.data.pubDate)}
+                </time>
+                <span>·</span>
+                <span>{post.data.author}</span>
+              </div>
+
+              <h2 class="text-2xl font-bold text-gray-800 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">
+                {post.data.title}
+              </h2>
+
+              <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                {post.data.description}
+              </p>
+
+              {post.data.tags && post.data.tags.length > 0 && (
+                <div class="flex flex-wrap gap-2 mt-2">
+                  {post.data.tags.map((tag) => (
+                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 text-xs font-medium rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              <div class="flex items-center gap-2 text-yellow-500 dark:text-yellow-400 font-semibold mt-2">
+                Leer artículo
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+
+    {sortedPosts.length === 0 && (
+      <div class="text-center py-16">
+        <p class="text-gray-500 dark:text-gray-400 text-lg">
+          Próximamente nuevos artículos...
+        </p>
+      </div>
+    )}
+  </main>
+</Layout>
