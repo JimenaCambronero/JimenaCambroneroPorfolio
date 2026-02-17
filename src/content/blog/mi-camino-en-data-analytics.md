@@ -3,6 +3,7 @@ title: "De Abogada en Buenos Aires a Data Analyst en Madrid: Mi camino en el mun
 description: "La historia de cómo dejé mi carrera en derecho, crucé el océano y encontré mi lugar en el mundo del analytics gracias a una comunidad que me abrió las puertas."
 pubDate: 2026-02-15
 author: "Jimena Cambronero"
+image: "https://jimenacambronero.netlify.app/foto/me.png"
 tags: ["Comunidad", "Cambio de carrera", "Data Analytics", "Historia personal"]
 ---
 

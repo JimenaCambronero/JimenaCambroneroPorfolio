@@ -3,6 +3,7 @@ title: "Por qué aprender Microsoft Fabric (y por qué debería importarte si tr
 description: "Microsoft Fabric está revolucionando el mundo del analytics. Te cuento desde mi experiencia por qué deberías prestarle atención y cómo puede transformar tu forma de trabajar con datos."
 pubDate: 2026-02-17
 author: "Jimena Cambronero"
+image: "https://jimenacambronero.netlify.app/foto/me.png"
 tags: ["Microsoft Fabric", "Data Analytics", "Power BI", "Cloud", "Business Intelligence"]
 ---
 
