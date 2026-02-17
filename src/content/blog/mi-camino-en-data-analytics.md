@@ -6,13 +6,13 @@ author: "Jimena Cambronero"
 tags: ["Comunidad", "Cambio de carrera", "Data Analytics", "Historia personal"]
 ---
 
-## El Comienzo: Una Decisión Difícil
+## El comienzo: Una Decisión Difícil
 
 Cuando sos abogada con más de una década de experiencia y decides empezar de cero en un campo completamente diferente, la gente te mira con cara de "estás segura?", "porque ahora?", "¿pero... lo pensaste bien?" Y sí, estaba segura, pero eso no significa que no fuera aterrador.
 
 Durante años trabajé en el Poder Judicial en Argentina, específicamente en la Suprema Corte de Justicia de Buenos Aires. Expedientes, informes legales, plazos que cumplir. Pero había algo que siempre me había llamado la atención en ese trabajo: los **datos**. Los dashboards que armaba en Excel para el seguimiento de casos, las estadísticas que generaba para apoyar decisiones estratégicas. Ahí estaba la semilla de lo que vendría después. (quien diría que todas esas horas peleando con BUSCARV y tablas dinámicas eran en realidad un entrenamiento para mi futuro).
 
-## El Salto al vacío: de Argentina a Madrid
+## El salto al vacío: de Argentina a Madrid
 
 2023 fue el año del cambio. No solo decidí cambiar de carrera, sino también de país. Argentina quedaba atrás; Madrid era el nuevo destino. Y con eso venía todo un desafío: **encontrar trabajo en un país nuevo, en un campo nuevo, sin experiencia formal**.
 
@@ -22,7 +22,7 @@ Tener a alguien que te diga "vamos a estar bien" cuando estás en modo pánico p
 
 Si alguna vez has buscado trabajo sabiendo que tu CV no encaja perfectamente con lo que piden, conoces esa sensación. Es agotador. Es frustrante. Mandas cientos de aplicaciones y recibes silencios o respuestas automáticas. Te preguntas si hiciste bien, si realmente tenes lo necesario, si alguna vez te darán una oportunidad. Y en esos momentos, tener a alguien que te recuerda por qué empezaste hace toda la diferencia.
 
-## Lo Que cambió todo: La Comunidad
+## Lo que cambió todo: La Comunidad
 
 Aquí es donde empieza lo bueno de esta historia.
 
@@ -63,7 +63,7 @@ Y cuando te sientas lista/o, devuelve. Comparte lo que aprendiste, ayuda a quien
 Pensé que mis años en derecho no aportarían nada a mi carrera en datos. Estaba equivocada. La capacidad analítica, la atención al detalle, la gestión de información compleja, la comunicación clara de hallazgos... todo eso lo traía conmigo. Tu background no es un lastre; es un diferenciador.
 
 
-### 4. **Atrévete a dar el paso (Incluso cuando No te sientas lista)**
+### 4. **Dar el paso (incluso cuando No te sientas lista)**
 
 Cuando me propusieron dar esa charla en Barcelona, mi primera reacción fue ...yo? pero si apenas llevo un año trabajando en esto?". Imposter syndrome al máximo. Pero lo hice. Y fue transformador. No esperes a sentirte 100% preparada/o. Ese momento no llega nunca.
 
