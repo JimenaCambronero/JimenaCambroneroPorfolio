@@ -29,7 +29,7 @@ Aquí es donde empieza lo bueno de esta historia.
 
 En medio de esa búsqueda, descubrí algo que no esperaba: **la comunidad de datos es increíblemente generosa**. Gracias Héctor por motivarme tanto para ese primer evento al que no me animaba a ir porque no conocía a nadie y tenía pánico de quedar en un rincón. Empecé a seguir referentes en LinkedIn, a participar en conversaciones, a consumir contenido de quienes sabían muchísimo más que yo. Y pasó algo mágico: **esas personas que desde Argentina veía inalcanzables resultaron ser cercanas, accesibles y dispuestas a ayudar**.
 
-Conocí a **Sara Alonso Martí**, a **Mónica Mesa**, a **Mar Lizana**. Tres mujeres brillantes que sin conocerme me tendieron la mano, me dieron consejos, me hicieron sentir parte de algo más grande que yo. No fue solo networking frío; fue conexión humana real, y hoy construimos una hermosa amistad que crece día a día. Gracias chicas! Saben lo que las quiero y lo importante que son en mi vida!
+Conocí a **Sara Lozano Martí**, a **Mónica Mesa**, a **Mar Lizana**. Tres mujeres brillantes que sin conocerme me tendieron la mano, me dieron consejos, me hicieron sentir parte de algo más grande que yo. No fue solo networking frío; fue conexión humana real, y hoy construimos una hermosa amistad que crece día a día. Gracias chicas! Saben lo que las quiero y lo importante que son en mi vida!
 
 La comunidad de datos no es solo gente que comparte código o tips técnicos (que también lo hace, y mucho). Es gente que entiende lo difícil que es el camino, que sabe lo que es empezar desde cero, que celebra tus pequeñas victorias como si fueran propias.
 
