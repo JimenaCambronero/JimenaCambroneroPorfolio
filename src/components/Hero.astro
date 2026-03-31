@@ -1,9 +1,10 @@
 ---
-import CorreoIcon from "./Icons/CorreoIcon.astro"
-import CvIcon from "./Icons/CvIcon.astro"
 import GitHubIcon from "./Icons/GitHubIcon.astro"
 import LinkedInIcon from "./Icons/LinkedInIcon.astro"
 import Social from "./Social.astro"
+import CorreoIcon from "./Icons/CorreoIcon.astro"
+import CvIcon from "./Icons/CvIcon.astro"
+import BookIcon from "./Icons/BookIcon.astro"
 const personalImageAlt = "Jimena"
 
 ---
@@ -38,25 +39,16 @@ const personalImageAlt = "Jimena"
         </Social>
       </nav>
 
-      <!-- Call to Action destacado -->
-      <div class="flex flex-wrap gap-4 mt-8">
+      <div class="mt-8">
         <a
-          href="mailto:jimenacambronero@gmail.com"
-          class="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 dark:bg-yellow-600 dark:hover:bg-yellow-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+          href="/blog"
+          class="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 dark:bg-yellow-600 dark:hover:bg-yellow-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
         >
-          <CorreoIcon class="size-5" />
-          ¡Trabajemos Juntos!
-        </a>
-        <a
-          href="https://drive.google.com/file/d/1vVaeI4iIgXmFMMOaZPk4mutTejGJ5t-2/view?usp=share_link"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="px-6 py-3 bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2"
-        >
-          <CvIcon class="size-5" />
-          Descargar CV
+          <BookIcon class="size-5" />
+          Lee mi Blog
         </a>
       </div>
+
     </div>
     
     <!-- Imagen -->
