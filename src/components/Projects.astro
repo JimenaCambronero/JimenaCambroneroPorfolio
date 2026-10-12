@@ -127,36 +127,46 @@ const PROJECTS = [
 
 ---
 
-<div class="flex flex-col gap-y-12 md:gap-y-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
   {PROJECTS.map(({ image, title, description, tags, link, github }) => (
-    <article class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-4 md:p-6 flex flex-col">
-      <h3 class="text-xl md:text-2xl font-bold text-yellow-500 mb-2">{title}</h3>
-      <ul class="flex flex-wrap mb-2 gap-x-2">
-        {tags.map((tag) => (
-          <li>
-            <span class={`flex gap-x-2 rounded-full ${tag.class} py-2 px-4`}>
-              <tag.icon class="size-4" />
-              {tag.name}
-            </span>
-          </li>
-        ))}
-      </ul>
-      <div class="mt-2 text-sm md:text-base text-gray-600 dark:text-gray-200 pb-4 md:pb-6">{description}</div>
-      <img class="rounded shadow-2xl shadow-white/10 object-cover" src={image} alt={`Captura de pantalla del proyecto ${title}`} loading="lazy" decoding="async" width="1920" height="1080" />
-      <footer class="flex items-center justify-start mt-4 gap-x-4">
-        {github && (
-          <LinkButton href={github} class="flex items-center gap-x-2">
-            <GitHubIcon class="size-6" />
-            Ver Código
-          </LinkButton>
-        )}
-        {link && (
-          <LinkButton href={link} class="flex items-center gap-x-2">
-            <Link class="size-4" />
-            Ver Proyecto
-          </LinkButton>
-        )}
-      </footer>
+    <article class="bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col overflow-hidden">
+      <img
+        class="w-full h-40 md:h-44 object-cover"
+        src={image}
+        alt={`Captura de pantalla del proyecto ${title}`}
+        loading="lazy"
+        decoding="async"
+        width="1920"
+        height="1080"
+      />
+      <div class="p-4 flex flex-col flex-grow">
+        <h3 class="text-base md:text-lg font-bold text-yellow-500 mb-2">{title}</h3>
+        <ul class="flex flex-wrap mb-2 gap-1.5">
+          {tags.map((tag) => (
+            <li>
+              <span class={`flex gap-1.5 items-center rounded-full ${tag.class} py-1 px-2.5 text-xs`}>
+                <tag.icon class="size-3.5" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <div class="text-xs md:text-sm text-gray-600 dark:text-gray-200 mb-3 line-clamp-3 flex-grow">{description}</div>
+        <footer class="flex items-center justify-start mt-auto gap-x-2">
+          {github && (
+            <LinkButton href={github} class="text-xs md:text-sm">
+              <GitHubIcon class="size-4" />
+              Código
+            </LinkButton>
+          )}
+          {link && (
+            <LinkButton href={link} class="text-xs md:text-sm">
+              <Link class="size-3.5" />
+              Ver
+            </LinkButton>
+          )}
+        </footer>
+      </div>
     </article>
   ))}
 </div>

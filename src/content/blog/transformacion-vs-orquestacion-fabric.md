@@ -96,17 +96,12 @@ Acá está el punto que más importa: estas herramientas no compiten entre sí �
 
 El flujo más habitual en proyectos reales es exactamente este:
 
-```
-Pipeline (orquesta)
-   │
-   ├── Dataflow Gen2 (transforma Bronze → Silver)
-   │
-   ├── Notebook (transforma Silver → Gold)
-   │
-   ├── Semantic Model Refresh (actualiza Power BI)
-   │
-   └── Teams Notification (avisa que todo terminó bien ✅)
-```
+**Pipeline** (orquesta)
+
+- **Dataflow Gen2** → transforma Bronze → Silver
+- **Notebook** → transforma Silver → Gold
+- **Semantic Model Refresh** → actualiza Power BI
+- **Teams Notification** → avisa que todo terminó bien ✅
 
 La Pipeline es el contenedor que coordina todo. Cada herramienta adentro hace lo que mejor sabe hacer.
 
@@ -156,17 +151,5 @@ Este es uno de los conceptos que más aparece en los exámenes. La distinción e
 La regla de oro que siempre funciona: si el escenario habla de **limpiar, combinar o preparar datos** → transformación (Dataflow o Notebook). Si habla de **automatizar, programar, encadenar o manejar errores** → orquestación (Pipeline).
 
 ---
-
-Y antes de cerrar... porque la vida de datos no es solo pipelines y certificaciones — también es sobrevivir las reuniones que podrían haber sido un email. 😅
-
-Junto con las increíbles **Mónica Mesa** y **Sara Lozano Martí** nos inspiramos en nuestro día a día, y el de todos nosotros, seamos honestos y creamos algo muy necesario:
-
-🎵 **Grandes Éxitos del Sufrimiento Corporativo Vol. I** — la lista de reproducción que tu lunes por la mañana estaba pidiendo a gritos.
-
-Si la querés disfrutar, compartir, o simplemente saber que no estás sola en esto... acá está 👇 🎧 [Grandes Éxitos del Sufrimiento Corporativo Vol. I — Las Datchup en Spotify](https://open.spotify.com/intl-es/artist/0Z3Qg0IyDVuC5somW47tQ0?si=roo1oujMTZmPcb3K9HuUpg)
-
-Y si todavía no me seguís en YouTube, por acá comparto todo sobre Microsoft Fabric 👇 📺 [Aprende Microsoft Fabric desde cero en español 🚀 con Jimena](https://www.youtube.com/@jimenacambronero)
-
-Que la disfruten, que se rían, y que esta lista sea el hit del verano! 🙌🏻🫶🏼😻
 
 ¿Todavía mezclan Dataflows con Pipelines? No se preocupen, nos pasó a todos 😄 Cuéntenme en LinkedIn cómo están aplicando estas herramientas en sus proyectos. 🧉
