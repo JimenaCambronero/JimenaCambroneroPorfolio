@@ -5,19 +5,20 @@ import Social from "./Social.astro"
 import CvIcon from "./Icons/CvIcon.astro"
 import BookIcon from "./Icons/BookIcon.astro"
 import CorreoIcon from "./Icons/CorreoIcon.astro"
-const personalImageAlt = "Jimena"
-
+import MicrophoneIcon from "./Icons/MicrophoneIcon.astro"
+import YouTubeIcon from "./Icons/YouTubeIcon.astro"
+const personalImageAlt = "Jimena Cambronero, Fabric Data Engineer"
 ---
 
 <div class="max-w mx-auto">
   <div class="flex flex-col-reverse sm:flex-row gap-4 mb-4 items-center sm:items-start">
-    
+
     <div class="sm:w-2/3">
       <h1 class="text-4xl font-bold tracking-tight text-gray-700 sm:text-5xl dark:text-white">
         Hola, soy Jimena 👩‍💻
       </h1>
       <p class="mt-4 text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-        <strong class="text-yellow-500 font-semibold dark:text-yellow-400">Consultora de Data Analytics & Business Intelligence | Power BI · SQL · Python · Microsoft Fabric</strong>
+        <strong class="text-yellow-500 font-semibold dark:text-yellow-400">Fabric Data Engineer · Business Intelligence Speaker · Community Builder</strong>
       </p>
 
       <nav class="flex flex-wrap gap-4 mt-6">
@@ -29,7 +30,11 @@ const personalImageAlt = "Jimena"
           <GitHubIcon class="size-4" />
           GitHub
         </Social>
-<Social href="https://drive.google.com/file/d/1vVaeI4iIgXmFMMOaZPk4mutTejGJ5t-2/view?usp=share_link">
+        <Social href="https://sessionize.com/Jimena-Cambronero/">
+          <MicrophoneIcon class="size-4" />
+          Sessionize
+        </Social>
+        <Social href="https://drive.google.com/file/d/1vVaeI4iIgXmFMMOaZPk4mutTejGJ5t-2/view?usp=share_link">
           <CvIcon class="size-4" />
           Ver CV
         </Social>
@@ -39,7 +44,7 @@ const personalImageAlt = "Jimena"
         </Social>
       </nav>
 
-      <div class="mt-8">
+      <div class="mt-8 flex flex-wrap gap-4">
         <a
           href="/blog"
           class="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 dark:bg-yellow-600 dark:hover:bg-yellow-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
@@ -47,16 +52,25 @@ const personalImageAlt = "Jimena"
           <BookIcon class="size-5" />
           Lee mi Blog
         </a>
+        <a
+          href="https://www.youtube.com/@jimenacambronero"
+          target="_blank"
+          rel="noopener"
+          class="px-6 py-3 bg-red-600 hover:bg-red-700 dark:bg-red-700 dark:hover:bg-red-800 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
+        >
+          <YouTubeIcon class="size-5" />
+          Conoce mi canal de YouTube
+        </a>
       </div>
 
     </div>
-    
+
     <!-- Imagen -->
     <div class="sm:w-1/3 sm:justify-end">
       <img
         class="rounded-full shadow-lg w-24 h-24 sm:w-48 sm:h-48"
         src="/foto/me.png"
-        alt="Jimena"
+        alt={personalImageAlt}
       />
     </div>
   </div>

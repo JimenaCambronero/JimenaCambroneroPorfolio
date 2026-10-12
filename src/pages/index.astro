@@ -1,9 +1,11 @@
 ---
 import AboutMe from "../components/AboutMe.astro";
+import Certifications from "../components/Certifications.astro";
 import Education from "../components/Education.astro";
 import Experience from "../components/Experience.astro";
 import Hero from "../components/Hero.astro";
 import Briefcase from "../components/Icons/Briefcase.astro";
+import CertificateIcon from "../components/Icons/CertificateIcon.astro";
 import Code from "../components/Icons/Code.astro";
 import ProfileCheck from "../components/Icons/ProfileCheck.astro";
 import Projects from "../components/Projects.astro";
@@ -15,8 +17,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout
-	title="Jimena Cambronero | Data Analytics & BI Consultant | Power BI, SQL, Python"
-	description="Consultora de Data Analytics especializada en Power BI, Microsoft Fabric, SQL y Python. Experiencia en ETL, modelado de datos, DAX y desarrollo de dashboards. Portfolio con proyectos de análisis de datos y desarrollo web."
+	title="Jimena Cambronero | Fabric Data Engineer | Microsoft Fabric, Power BI, DP-600, DP-700"
+	description="Jimena Cambronero — Fabric Data Engineer y Business Intelligence Consultant. Certificada Microsoft DP-700 (Fabric Data Engineer Associate) y DP-600 (Fabric Analytics Engineer Associate). Especialista en Microsoft Fabric, Power BI, SQL, Python y DAX. Speaker y Community Builder en la comunidad de datos."
 >
 <main class="px-4">
     <SectionContainer class="py-16 md:py-24">
@@ -58,6 +60,14 @@ import Layout from "../layouts/Layout.astro";
       </h2>
       <Skills />
     </SectionContainer>
+    <SectionContainer id="certificaciones">
+      <h2 class="flex items-center mb-6 text-2xl md:text-3xl font-semibold gap-x-6 md:gap-x-8 text-black/80 dark:text-white"
+      >
+        <CertificateIcon class="size-7 md:size-8" />
+        Certificaciones
+      </h2>
+      <Certifications />
+    </SectionContainer>
     <SectionContainer id="formacion">
       <h2 class="flex items-center mb-6 text-2xl md:text-3xl font-semibold gap-x-6 md:gap-x-8 text-black/80 dark:text-white"
       >
@@ -65,7 +75,7 @@ import Layout from "../layouts/Layout.astro";
         Formaciones
       </h2>
       <Education />
-    </SectionContainer>  
+    </SectionContainer>
   </div>
   </main>
 </Layout>

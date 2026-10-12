@@ -2,6 +2,8 @@
 import LinkedInIcon from "./Icons/LinkedInIcon.astro"
 import GitHubIcon from "./Icons/GitHubIcon.astro"
 import CorreoIcon from "./Icons/CorreoIcon.astro"
+import YouTubeIcon from "./Icons/YouTubeIcon.astro"
+import MicrophoneIcon from "./Icons/MicrophoneIcon.astro"
 
 const currentYear = new Date().getFullYear()
 
@@ -17,6 +19,16 @@ const socialLinks = [
     icon: GitHubIcon,
   },
   {
+    name: "YouTube",
+    url: "https://www.youtube.com/@jimenacambronero",
+    icon: YouTubeIcon,
+  },
+  {
+    name: "Sessionize",
+    url: "https://sessionize.com/Jimena-Cambronero/",
+    icon: MicrophoneIcon,
+  },
+  {
     name: "Email",
     url: "mailto:jimenacambronero@gmail.com",
     icon: CorreoIcon,
@@ -28,6 +40,7 @@ const navLinks = [
   { name: "Proyectos", url: "/#proyectos" },
   { name: "Sobre mí", url: "/#sobre-mi" },
   { name: "Habilidades", url: "/#habilidades" },
+  { name: "Certificaciones", url: "/#certificaciones" },
   { name: "Formación", url: "/#formacion" },
   { name: "Blog", url: "/blog" },
 ]
@@ -41,7 +54,7 @@ const navLinks = [
       <div>
         <h3 class="text-yellow-400 font-bold text-lg mb-4">Jimena Cambronero</h3>
         <p class="text-sm text-gray-400 leading-relaxed">
-          Consultora de Data Analytics & BI especializada en Power BI, SQL y Python. Transformando datos en insights accionables.
+          Fabric Data Engineer y BI Consultant. Certificada DP-700 y DP-600. Speaker y Community Builder en la comunidad de datos.
         </p>
       </div>
 

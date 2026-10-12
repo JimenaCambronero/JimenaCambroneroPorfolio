@@ -1,0 +1,29 @@
+---
+import EducationItem from "./EducationItem.astro"
+const CERTIFICATIONS = [
+  {
+    date: "Abril 2026",
+    title: "DP-700 · Microsoft Certified: Fabric Data Engineer Associate",
+    company: "Microsoft",
+    description:
+      "Certificación oficial que valida habilidades en ingeniería de datos sobre Microsoft Fabric: ingesta y orquestación con Data Pipelines y Dataflows Gen2, transformación con Notebooks y SQL, implementación de arquitecturas Lakehouse, monitorización de cargas y gobierno del dato."
+  },
+  {
+    date: "Marzo 2026",
+    title: "DP-600 · Microsoft Certified: Fabric Analytics Engineer Associate",
+    company: "Microsoft",
+    description:
+      "Certificación oficial que valida habilidades en preparación y modelado de datos, implementación de modelos semánticos, exploración y análisis con DAX y SQL, y despliegue de soluciones analíticas end-to-end en Microsoft Fabric (Lakehouse y Warehouse)."
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    CERTIFICATIONS.map((certification) => (
+      <li class="">
+        <EducationItem {...certification} />
+      </li>
+    ))
+  }
+</ol>
