@@ -46,27 +46,27 @@ const navLinks = [
 ]
 ---
 
-<footer class="bg-gray-900 dark:bg-gray-950 text-gray-300 py-12 mt-24">
+<footer class="bg-gray-900 dark:bg-gray-950 text-gray-300 py-8 mt-16">
   <div class="container mx-auto px-4 max-w-6xl">
     <!-- Top section -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
       <!-- About -->
       <div>
-        <h3 class="text-yellow-400 font-bold text-lg mb-4">Jimena Cambronero</h3>
-        <p class="text-sm text-gray-400 leading-relaxed">
+        <h3 class="text-yellow-400 font-bold text-base mb-3">Jimena Cambronero</h3>
+        <p class="text-xs text-gray-400 leading-relaxed">
           Fabric Data Engineer y BI Consultant. Certificada DP-700 y DP-600. Speaker y Community Builder en la comunidad de datos.
         </p>
       </div>
 
       <!-- Quick Links -->
       <div>
-        <h3 class="text-yellow-400 font-bold text-lg mb-4">Enlaces Rápidos</h3>
-        <ul class="space-y-2">
+        <h3 class="text-yellow-400 font-bold text-base mb-3">Enlaces Rápidos</h3>
+        <ul class="grid grid-cols-2 gap-x-4 gap-y-1">
           {navLinks.map((link) => (
             <li>
               <a
                 href={link.url}
-                class="text-sm text-gray-400 hover:text-yellow-400 transition-colors duration-200"
+                class="text-xs text-gray-400 hover:text-yellow-400 transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -77,8 +77,8 @@ const navLinks = [
 
       <!-- Social -->
       <div>
-        <h3 class="text-yellow-400 font-bold text-lg mb-4">Conecta Conmigo</h3>
-        <div class="flex gap-4">
+        <h3 class="text-yellow-400 font-bold text-base mb-3">Conecta Conmigo</h3>
+        <div class="flex gap-3">
           {socialLinks.map((social) => (
             <a
               href={social.url}
@@ -87,7 +87,7 @@ const navLinks = [
               class="text-gray-400 hover:text-yellow-400 transition-colors duration-200"
               aria-label={social.name}
             >
-              <social.icon class="size-6" />
+              <social.icon class="size-5" />
             </a>
           ))}
         </div>
@@ -95,11 +95,11 @@ const navLinks = [
     </div>
 
     <!-- Divider -->
-    <div class="border-t border-gray-800 my-8"></div>
+    <div class="border-t border-gray-800 my-5"></div>
 
     <!-- Bottom section -->
-    <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-      <p class="mb-4 md:mb-0">
+    <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+      <p class="mb-2 md:mb-0">
         © {currentYear} Jimena Cambronero. Todos los derechos reservados.
       </p>
       <p class="flex items-center gap-2">
