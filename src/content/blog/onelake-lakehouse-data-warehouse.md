@@ -3,7 +3,7 @@ title: "OneLake, Lakehouse y Data Warehouse: qué es cada uno y cuándo usarlos"
 description: "Antes de usar las herramientas de Microsoft Fabric, necesitás tener claros tres conceptos clave: OneLake, Lakehouse y Data Warehouse. Acá los desarmo uno por uno."
 pubDate: 2026-03-16
 author: "Jimena Cambronero"
-image: "https://jimenacambronero.netlify.app/foto/me.png"
+image: "https://jimenacambronero.netlify.app/foto/me.jpg"
 tags: ["Microsoft Fabric", "OneLake", "Lakehouse", "Data Warehouse", "Data Engineering", "Data Analytics"]
 ---
 

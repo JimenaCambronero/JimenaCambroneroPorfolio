@@ -3,7 +3,7 @@ title: "Pipelines en Microsoft Fabric: el director de orquesta que hace que todo
 description: "Si los Dataflows Gen2 transforman datos, las Pipelines coordinan cuándo, cómo y en qué orden pasa todo. Son el motor de orquestación de Fabric — y acá te explico cómo funcionan."
 pubDate: 2026-04-09
 author: "Jimena Cambronero"
-image: "https://jimenacambronero.netlify.app/foto/me.png"
+image: "https://jimenacambronero.netlify.app/foto/me.jpg"
 tags: ["Microsoft Fabric", "Pipelines", "Data Engineering", "Orquestación", "Data Factory", "Data Analytics"]
 ---
 

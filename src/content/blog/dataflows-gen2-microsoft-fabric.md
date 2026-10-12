@@ -3,7 +3,7 @@ title: "Dataflows Gen2 en Microsoft Fabric: tu primer pipeline sin escribir una 
 description: "Dataflows Gen2 es el motor de ingesta y transformación de datos de Microsoft Fabric. Si conocés Power Query, ya sabés usarlo. Acá te explico cómo funciona y cuándo usarlo."
 pubDate: 2026-03-31
 author: "Jimena Cambronero"
-image: "https://jimenacambronero.netlify.app/foto/me.png"
+image: "https://jimenacambronero.netlify.app/foto/me.jpg"
 tags: ["Microsoft Fabric", "Dataflows Gen2", "Power Query", "Data Engineering", "OneLake", "Data Analytics"]
 ---
 

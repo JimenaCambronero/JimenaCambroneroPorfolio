@@ -3,7 +3,7 @@ title: "🏅 Arquitectura Medallion en Fabric: Bronze, Silver y Gold — o cómo
 description: "La Arquitectura Medallion no es una herramienta nueva ni algo exclusivo de Fabric, pero sí una de esas ideas que cambian completamente la forma de trabajar con datos. Acá te cuento cómo funcionan las capas Bronze, Silver y Gold."
 pubDate: 2026-05-05
 author: "Jimena Cambronero"
-image: "https://jimenacambronero.netlify.app/foto/me.png"
+image: "https://jimenacambronero.netlify.app/foto/me.jpg"
 tags: ["Microsoft Fabric", "Medallion Architecture", "Bronze Silver Gold", "Data Engineering", "Delta Lake", "Lakehouse", "Data Analytics"]
 ---
 

@@ -101,6 +101,7 @@ const formatDate = (date: Date) => {
           <!-- Copy Link Button -->
           <button
             id="copy-link-btn"
+            aria-label="Copiar enlace del artículo"
             class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg font-medium transition-colors text-sm md:text-base"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -119,7 +120,7 @@ const formatDate = (date: Date) => {
             <img
               width="120"
               height="120"
-              src="/foto/me.png"
+              src="/foto/me.jpg"
               alt={entry.data.author}
               class="w-32 h-32 object-cover rounded-full transition-transform duration-300 transform hover:scale-105"
             />
@@ -129,7 +130,7 @@ const formatDate = (date: Date) => {
               {entry.data.author}
             </p>
             <p class="text-gray-600 dark:text-gray-300 text-sm md:text-base max-w-md">
-              Consultora de Data Analytics especializada en Power BI y Microsoft Fabric. Apasionada por los datos, el análisis y compartir conocimiento con la comunidad.
+              Fabric Data Engineer y BI Consultant. Certificada Microsoft DP-700 y DP-600. Speaker y Community Builder apasionada por compartir conocimiento sobre Microsoft Fabric, Power BI y buenas prácticas de datos.
             </p>
           </div>
         </div>

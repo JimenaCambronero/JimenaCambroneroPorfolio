@@ -1,58 +1,50 @@
-<h3> Hola a todos! 👩‍💻 Este es mi Porfolio <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"> </h3>
-<div id="header" align="left">
+# Hola! 👩‍💻 Este es mi Portfolio
 
+Repositorio de mi portfolio personal, diseñado para mostrar mi experiencia como **Fabric Data Engineer y Business Intelligence Consultant**. Certificada Microsoft DP-700 y DP-600. Speaker y Community Builder en la comunidad de datos.
 
-Este es el repositorio de mi porfolio personal, diseñado para mostrar mi experiencia como Analista de Datos y Desarrolladora Front-End. El portafolio está construido con Astro y utiliza Tailwind CSS para el diseño y estilo. Es completamente responsivo y está optimizado para adaptarse a diferentes tamaños de pantalla.
+Está construido con **Astro** y usa **Tailwind CSS**. Es responsivo y está optimizado para distintos tamaños de pantalla.
 
-![alt text](PortadaReadme.webp)
+![Portada del portfolio](PortadaReadme.webp)
 
-### Estructura del Proyecto
+## Estructura del Proyecto
 
-El proyecto está dividido en varias secciones clave que destacan diferentes aspectos de mi experiencia y habilidades:
+El sitio está dividido en las siguientes secciones:
 
-1. Sección de Bienvenida
-Contiene un breve saludo y descripción personal.
-Incluye una imagen de perfil y enlaces a mis redes sociales.
-Implementación responsiva para que la imagen se ajuste adecuadamente en diferentes dispositivos.
-2. Experiencia Laboral
-Listado de mis experiencias laborales relevantes.
-Cada experiencia se muestra en una sola columna, con el título del trabajo, la empresa, la fecha y una descripción detallada.
-La línea vertical con el punto amarillo resalta la sección, que se mantiene visible en todos los modos.
-3. Proyectos
-La sección de proyectos muestran mis trabajos en Python, SQL y Power BI y Páginas Web.
-Cada proyecto incluye un título, una breve descripción, tecnologías utilizadas (indicadas mediante badges), y enlaces a GitHub y la presentación del proyecto.
-4. Formación Académica
-Información sobre mi formación académica y cursos realizados.
-Sigue una estructura simple en una columna, con títulos y detalles relevantes.
+1. **Hero** — saludo, posicionamiento, enlaces a redes (LinkedIn, GitHub, YouTube, Sessionize) y accesos directos al blog y al canal de YouTube.
+2. **Sobre mí** — resumen profesional, trayectoria y rol en la comunidad.
+3. **Experiencia laboral** — timeline vertical con cada rol, empresa, fecha y descripción.
+4. **Proyectos** — trabajos en Power BI, Python, SQL y desarrollo web, con enlaces a GitHub y a la demo del proyecto.
+5. **Habilidades técnicas** — stack agrupado por categorías (Fabric & Data Engineering, BI & Analytics, Bases de datos, Programación, Desarrollo Web, Comunidad).
+6. **Certificaciones** — DP-700 y DP-600 de Microsoft.
+7. **Formación** — bootcamp, cursos y formación universitaria.
+8. **Blog** — artículos sobre Microsoft Fabric, Power BI, Dataflows Gen2 y Business Intelligence.
 
-## Tecnologías Utilizadas
+## Tecnologías
 
-**Astro**: Framework principal para la construcción de la página.
-**Tailwind CSS**: Utilizado para el diseño y estilo de la página.
-**JavaScript**: Para funcionalidades adicionales y dinámicas.
-**HTML5**: Estructura básica del contenido.
-**CSS3**: Estilos complementarios.
+- **Astro** — framework principal.
+- **Tailwind CSS** — diseño y estilos.
+- **TypeScript** — tipos y seguridad.
+- **@astrojs/sitemap** — sitemap automático para SEO.
 
-## Configuración del Proyecto
+## Configuración
 
-Clonación del Repositorio:
+```bash
+git clone https://github.com/JimenaCambronero/JimenaCambroneroPorfolio.git
+cd JimenaCambroneroPorfolio
+npm install
+npm run dev
+```
 
-    git clone https://github.com/JimenaCambronero/portafolio-personal.git
-    cd portafolio-personal
-    Instalación de Dependencias:
-    npm install
-    Ejecución del Proyecto:
-    npm run dev
-Esto iniciará un servidor de desarrollo local donde podrás ver el proyecto en servidor local.
+Esto inicia el servidor de desarrollo local.
 
-    npm run build
-Esto generará los archivos estáticos en la carpeta dist, listos para ser desplegados.
+Para generar el build de producción:
 
-El porfolio está diseñado para ser responsivo:
+```bash
+npm run build
+```
 
-Las contribuciones son bienvenidas.
+Los archivos estáticos quedan en `dist/`, listos para desplegar.
 
+---
 
-# <h4> Si te gusta alguno de los repositorios, podes hacer clic para darme tu apoyo en el ⭐️ botón y correr la voz 🦄⁣ <h4>
-⁣ 👩‍💻 Muchas gracias y Saludos!⁣
-<br>
+Si te gusta el proyecto, podés dejar una ⭐️ en el repo. ¡Gracias! 🦄
