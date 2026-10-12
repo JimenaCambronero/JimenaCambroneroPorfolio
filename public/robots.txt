@@ -3,15 +3,5 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://tudominio.com/sitemap.xml
-
-# Permitir todos los bots de búsqueda
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
+# Sitemap generado automáticamente por @astrojs/sitemap en el build
+Sitemap: https://jimenacambronero.netlify.app/sitemap-index.xml

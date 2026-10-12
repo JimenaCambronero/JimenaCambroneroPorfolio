@@ -52,6 +52,54 @@ const ogImage = image ?? new URL('/foto/me.png', Astro.site).href
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={ogImage} />
 
+    <!-- JSON-LD Person schema -->
+    <script is:inline type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jimena Cambronero",
+      "url": Astro.site?.href,
+      "image": ogImage,
+      "jobTitle": "Fabric Data Engineer",
+      "description": "Fabric Data Engineer y Business Intelligence Consultant. Certificada Microsoft DP-700 y DP-600. Speaker y Community Builder en la comunidad de datos.",
+      "email": "jimenacambronero@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/jimenacambronero/",
+        "https://github.com/JimenaCambronero",
+        "https://www.youtube.com/@jimenacambronero",
+        "https://sessionize.com/Jimena-Cambronero/"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Microsoft Certified: Fabric Data Engineer Associate (DP-700)",
+          "credentialCategory": "Certification",
+          "recognizedBy": { "@type": "Organization", "name": "Microsoft" }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)",
+          "credentialCategory": "Certification",
+          "recognizedBy": { "@type": "Organization", "name": "Microsoft" }
+        }
+      ],
+      "knowsAbout": [
+        "Microsoft Fabric",
+        "Power BI",
+        "Data Pipelines",
+        "Dataflows Gen2",
+        "SQL",
+        "Python",
+        "DAX",
+        "Business Intelligence",
+        "Data Engineering"
+      ]
+    })} />
+
     <ViewTransitions />
   </head>
 

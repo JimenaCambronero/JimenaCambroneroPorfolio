@@ -142,7 +142,7 @@ const PROJECTS = [
         ))}
       </ul>
       <div class="mt-2 text-sm md:text-base text-gray-600 dark:text-gray-200 pb-4 md:pb-6">{description}</div>
-      <img class="rounded shadow-2xl shadow-white/10 object-cover" src={image} alt="Captura de pantalla del proyecto" />
+      <img class="rounded shadow-2xl shadow-white/10 object-cover" src={image} alt={`Captura de pantalla del proyecto ${title}`} loading="lazy" decoding="async" width="1920" height="1080" />
       <footer class="flex items-center justify-start mt-4 gap-x-4">
         {github && (
           <LinkButton href={github} class="flex items-center gap-x-2">
